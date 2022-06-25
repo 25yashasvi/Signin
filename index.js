@@ -19,6 +19,9 @@ app.listen(port,function(){
 });
 
 
-app.get("/homepage",(req,res)=>{
+app.get("/",(req,res)=>{
+  console.log(process.env.EMAIL),
+  console.log(process.env.PASSWORD),
+  console.log(process.env.MONGO_URI),
     res.send("Backhend");
 });
